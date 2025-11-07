@@ -1,0 +1,15 @@
+model:
+  input_dim: 46
+  output_dim: 1
+  hidden_layers: [64, 32]
+  dropout: 0.4
+  use_bn: true
+
+training:
+  batch_size: 16
+  lr: 0.0005
+  epochs: 120
+  wandb_project: "MLP-project"  
+  early_stop_patience: 25
+  weight_decay: 0.005
+
